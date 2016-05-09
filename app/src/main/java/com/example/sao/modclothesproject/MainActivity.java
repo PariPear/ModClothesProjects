@@ -1,13 +1,13 @@
 package com.example.sao.modclothesproject;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+
 import com.facebook.FacebookSdk;
 
 public class MainActivity extends AppCompatActivity {
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainMenuActivity.this, CustomCalendarView.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         Button btnAbout = (Button)findViewById(R.id.btnA);
         btnAbout.setOnClickListener(new View.OnClickListener() {
@@ -124,10 +124,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // TODO Auto-generated method stub
-                Intent intent = new Intent(MainMenuActivity.this, AboutActivity.class);
+                Intent intent = new Intent(MainActivity.this, AboutActivity.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
 
     }
